@@ -5,7 +5,7 @@
 пример: 3 -> среда
         5 -> пятница
 */
-/*
+
 // моё решение
 using System;
 Console.Clear();
@@ -27,7 +27,7 @@ else
 {
     Console.WriteLine("Неверный диапазон чисел");
 }
-*/
+
 
 // учитель
 using System;
