@@ -1,7 +1,4 @@
-﻿using System.Reflection.PortableExecutable;
-using System.IO.Enumeration;
-using System.IO;
-using System.Security.AccessControl;
+﻿
 /*
 Напишите программу, которая будет на вход принимать два числа и выводить,
 является ли второе число кратным первому. Если второе число не кратно числу
