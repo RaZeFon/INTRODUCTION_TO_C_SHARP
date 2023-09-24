@@ -1,4 +1,4 @@
-﻿﻿
+﻿
 class HelloWorld
 {
     // главный метод программы
@@ -36,3 +36,20 @@ class DialogDemo{
         MessageBox.Show("Продолжаем изучать C#");
     }
 }
+
+//====================================================================
+
+using System.Windows.Forms;
+class AnotherDialogDemo{
+    static void Main(){
+        // отображение диалогового окна
+        MessageBox.Show("Всем привет!", //сообщение
+            "Окно с названием", // название окна
+            MessageBoxButtons.OK, // кнопки (одна Ok)
+            MessageBoxIcon.Information // пиктограмма
+            );
+    }
+}
+
+
+
