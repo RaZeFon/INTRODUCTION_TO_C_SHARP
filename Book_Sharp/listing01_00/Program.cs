@@ -12,6 +12,7 @@ class HelloWorld
 
 //==============================================================
 
+/*
 // использование пространства имен System
 using System;
 // главный класс программы
@@ -23,9 +24,11 @@ class HelloWorld{
         Console.ReadKey();
     }
 }
+*/
 
 //===============================================================
 
+/*
 // использование пространства имен
 using System.Windows.Forms;
 // класс с главным методом программы
@@ -36,9 +39,11 @@ class DialogDemo{
         MessageBox.Show("Продолжаем изучать C#");
     }
 }
+*/
 
 //====================================================================
 
+/*
 using System.Windows.Forms;
 class AnotherDialogDemo{
     static void Main(){
@@ -50,6 +55,6 @@ class AnotherDialogDemo{
             );
     }
 }
-
+*/
 
 
