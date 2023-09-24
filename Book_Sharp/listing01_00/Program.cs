@@ -130,7 +130,29 @@ class InputConsoleDemo
 
 //====================================================
 
+using System;
+using Microsoft.VisualBasic;
+using System.Windows.Forms;
 
+class EnteringInteger
+{
+    static void Main()
+    {
+        // текстовые переменые
+        string res, txt;
+        // целочисленые переменые
+        int year = 2023, age, born;
+        // отображение окна в поле вода
+        res = Interaction.InputBox("В каком году вы роделись?", "Год рождения");
+        // предбрвзование текста в число
+        born = Int32.Parse(res);
+        // вычисление возраста
+        age = year - born;
+        txt = "Тогда вам " + age + " лет";
+        // окно с сообщением
+        MessageBox.Show(txt, " Возраст");
+    } 
+}
 
 
 
