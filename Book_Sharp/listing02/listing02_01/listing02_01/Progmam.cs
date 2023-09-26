@@ -1,8 +1,4 @@
-﻿
-// НЕ РАБОЧИЙ
-
-
-using System;
+﻿using System;
 
 
 public class Answer
