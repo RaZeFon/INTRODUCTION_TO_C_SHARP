@@ -1,25 +1,34 @@
-﻿using System;
+﻿/*
+ Напишите программу, которя проверяет, делиться ли введёное пользователем число на 3.
+*/
+
+
+using System;
 using System.Windows.Forms;
 using Microsoft.VisualBasic;
 
-class OddEvenDemo
+class DivisionThree
 {
     static void Main()
     {
-        //целочисленные переменные
-        int number, reminder;
-        // считывание целого числа
-        number = Int32.Parse(Interaction.InputBox(
-            //текс в окне
-            "Введите целое число: ",
-            //название окна
-            "Проверка: ")
-        );
-        // вычисление остатков от деления на 2:
-        reminder = number % 2;
-        string txt = "Вы ввели ";
-        // использован тернарный оператор
-        txt += (reminder == 0 ? "четное" : "нечетное" + " число!");
-        MessageBox.Show(txt);
+        int number = Int32.Parse(Interaction.InputBox("Проверка делится ли число на 3", "Проверка числа"));
+        string result = (number % 3 == 0 ? "Делиться на 3" : "Неделиться на 3");
+        MessageBox.Show($"Число {number} {result}");
     }
+}
+
+
+using System;
+using static System.Console;
+
+class DivisionThree
+{
+    static void Main()
+    {
+        Title = "Проверка делится ли число на 3";
+        Write("Введите число: ");
+        int number = int.Parse(ReadLine());
+        string result_str = (number % 3 == 0 ? "Делиться на 3" : "Неделится на 3");
+        WriteLine($"{number} {result_str}");
+}
 }
