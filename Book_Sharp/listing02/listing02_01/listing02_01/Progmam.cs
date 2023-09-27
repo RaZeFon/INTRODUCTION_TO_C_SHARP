@@ -1,38 +1,25 @@
 ﻿using System;
+using System.Windows.Forms;
+using Microsoft.VisualBasic;
 
-
-public class Answer
+class OddEvenDemo
 {
-    static bool IsPalindrome(int number)
+    static void Main()
     {
-        // Введите свое решение ниже
-        bool res = true;
-        if ((10000 > number) || (number >= 100000))
-        {
-            res = false;
-            Console.WriteLine("Число не пятизначное");
-            return res;
-        }
-
-    }
-
-    // Не удаляйте и не меняйте метод Main! 
-    static public void Main(string[] args)
-    {
-        int number;
-
-        if (args.Length >= 1)
-        {
-            number = int.Parse(args[0]);
-        }
-        else
-        {
-            // Здесь вы можете поменять значения для отправки кода на Выполнение
-            number = 64546;
-        }
-
-        // Не удаляйте строки ниже
-        bool result = IsPalindrome(number);
-        System.Console.WriteLine($"{result}");
+        //целочисленные переменные
+        int number, reminder;
+        // считывание целого числа
+        number = Int32.Parse(Interaction.InputBox(
+            //текс в окне
+            "Введите целое число: ",
+            //название окна
+            "Проверка: ")
+        );
+        // вычисление остатков от деления на 2:
+        reminder = number % 2;
+        string txt = "Вы ввели ";
+        // использован тернарный оператор
+        txt += (reminder == 0 ? "четное" : "нечетное" + " число!");
+        MessageBox.Show(txt);
     }
 }
