@@ -25,3 +25,26 @@ class OctalSystem
 
     }
 }
+
+
+using System;
+using static System.Console;
+
+class OctalAystem
+{
+    static void Main()
+    {
+        Title = "Вторая справа цифра в восьмеричном представлении числа";
+        Write("Ввод числа в десятичной системе исчисления: ");
+        string result_str = string.Empty;
+        int number = int.Parse(ReadLine());
+        while (number > 0)
+        {
+            result_str = Convert.ToString(number % 8) + result_str;
+            number /= 8;
+        }
+        int number2 = Convert.ToInt32(result_str) / 10 % 10;
+        WriteLine($"Вторая цифра {number2} востеричного числа {result_str}");
+        ReadKey();
+    }
+}
